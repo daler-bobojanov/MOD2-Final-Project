@@ -10,4 +10,8 @@ This app helps job seeking software developers search for jobs in Software Devel
 The target users are developers looking for employment in the software development field, available around the globe.
 
 ## *Wireframe:*
+
 ![1. Login(LandingPage)](https://github.com/daler-bobojanov/MOD2-Final-Project/blob/master/wireframe/1.Login(LandingPage).png)
+
+![2. HomePage](https://github.com/daler-bobojanov/MOD2-Final-Project/blob/master/wireframe/2.HomePage.png)
+
