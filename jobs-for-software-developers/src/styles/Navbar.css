@@ -13,5 +13,10 @@ nav {
     align-items: center;
     list-style: none;
     width: 100%;
+    color: white;
+}
 
+.link {
+    color: white;
+    text-decoration: none;
 }
