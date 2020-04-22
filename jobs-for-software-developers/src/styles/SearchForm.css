@@ -1,0 +1,28 @@
+.search-form {
+    display: flex;
+    padding-top: 5%;
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    /* border: 1px red solid; */
+}
+
+.search-form > div {
+    /* width: 20rem; */
+    margin: auto;
+    
+}
+
+.search-form > div > input {
+    border: 1px black solid;
+    width: 20rem;
+    
+}
+
+.search-form > button {
+    border: 1px black solid;
+    height: 3vh auto;
+    /* padding: 0; */
+}
