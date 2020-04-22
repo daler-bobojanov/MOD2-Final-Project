@@ -1,0 +1,21 @@
+.container-all-jobs {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: start; */
+    text-align: start;
+    width: 60%;
+    margin: auto;
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+    /* line-height: 2.9em; */
+    background-color: rgba(242, 241, 243, 0.87);
+    padding-left: 30px;
+}
+
+.container-all-jobs > a {
+    font-size: 1.4em;
+}
+
+.container-all-jobs > p {
+    padding: -0.1px 0;
+}
