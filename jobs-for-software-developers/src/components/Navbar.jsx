@@ -1,19 +1,26 @@
 import React from 'react'
 import '../styles/Navbar.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+// import homeButton from '../assets/homeButton.png';
+import homeBtn from '../assets/homeBtn.png';
 
 import AllJobs from './AllJobs';
 import MySavedJobs from './MySavedJobs';
 import SignOut from './SignOut';
 import UserName from './UserName';
 import Logo from './Logo';
+import SearchForm from './SearchForm';
 
-const Navbar = () => {
+
+const Navbar = (props) => {
     return (
         <Router>
             <nav>
-                <Link className="link" to="/">My Pretty Logo</Link>
+
                 <ul className="nav-links">
+                    <li>
+                        <Link className="link" to="/"><img src={homeBtn} id='nav-img' /></Link>
+                    </li>
                     <li>
                         <Link className="link" to="/alljobs">All jobs</Link>
                     </li>
