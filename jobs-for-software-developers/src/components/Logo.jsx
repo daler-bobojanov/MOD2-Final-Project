@@ -1,11 +1,9 @@
 import React from 'react'
-
+import SearchForm from './SearchForm';
 
 const Logo = () => {
     return (
-        <React.Fragment>
-            <h3>My pretty Logo</h3>
-        </React.Fragment>
+        <SearchForm />
     );
 }
 
