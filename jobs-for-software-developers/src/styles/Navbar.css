@@ -3,7 +3,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: blue;
+    background: black;
     color: white;
 }
 
@@ -19,4 +19,16 @@ nav {
 .link {
     color: white;
     text-decoration: none;
+}
+
+#nav-img {
+    width: 7vh;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px white solid;
+}
+
+#nav-img:hover {
+    background-color: orange;
+    border-color: red;
 }
