@@ -10,12 +10,20 @@
     /* line-height: 2.9em; */
     background-color: rgba(242, 241, 243, 0.87);
     padding-left: 30px;
+    /* border: 1px white solid; */
+    box-shadow: lightsteelblue 6px 6px 10px;
+    transition: transform .2s;
 }
 
-.container-all-jobs > a {
-    font-size: 1.4em;
+#container-company-url {
+    color: blue;
+    text-decoration: none;
 }
 
 .container-all-jobs > p {
     padding: -0.1px 0;
+}
+
+.container-all-jobs:hover {
+    transform: scale(1.01);
 }
