@@ -19,7 +19,7 @@ const Navbar = (props) => {
 
                 <ul className="nav-links">
                     <li>
-                        <Link className="link" to="/"><img src={homeBtn} id='nav-img' /></Link>
+                        <Link className="link" to="/"><img src={homeBtn} id='nav-img' alt="home-button" /></Link>
                     </li>
                     <li>
                         <Link className="link" to="/alljobs">All jobs</Link>
