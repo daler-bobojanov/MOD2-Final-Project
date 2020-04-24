@@ -31,11 +31,16 @@ class TechNews extends React.Component {
     render() {
         const postNews = this.state.data.map((post, id) => (
             <div key={id} className="news-grid-container-child">
-                <h4>{post.title}</h4>
+                <div id="news-anchor">
+                    <a href={post.url} target="_blank" >{post.title}</a>
+                </div>
                 <img src={post.urlToImage} alt="news-headline-image" className="news-image" />
                 <div>
                     <p>{post.description}</p>
+                </div>
+                <div>
                     <p>Source: {post.source.name}</p>
+                    <p>Published: {post.publishedAt}</p>
                 </div>
             </div>
         ))
@@ -43,6 +48,9 @@ class TechNews extends React.Component {
             <div className="news-grid-container">
                 {postNews}
 
+                <footer>
+                    <a href="https://newsapi.org/" target="_blank">Powered by News API</a>
+                </footer>
             </div>
         );
     }
