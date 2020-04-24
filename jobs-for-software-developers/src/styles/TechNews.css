@@ -1,0 +1,8 @@
+.news-grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+    margin: 10px 10px auto;
+    border: 1px black solid;
+    width: 100%;
+}
