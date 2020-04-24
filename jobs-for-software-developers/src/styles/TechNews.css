@@ -10,7 +10,7 @@
     transition: transform .2s;
 }
 .news-grid-container-child:hover {
-    box-shadow: 2px 3px 25px red;
+    box-shadow: 2px 3px 25px black;
 }
 .news-image {
     max-width: 100%;
@@ -25,6 +25,7 @@
     text-align: center;
     box-shadow: 4px 5px 9px black;
     overflow: auto;
+    
 }
 
 #news-anchor > a {
@@ -38,10 +39,11 @@
 }
 
 #source-date {
-    text-align: start;
+    text-align: justify;
     line-height: 0.3em;
     padding-top: 5px;
     
+    /* border: 1px red solid; */
 }
 
 #headline-h1 {
@@ -49,3 +51,4 @@
     color: black;
     font-family: 'Orbitron', sans-serif;
 }
+
