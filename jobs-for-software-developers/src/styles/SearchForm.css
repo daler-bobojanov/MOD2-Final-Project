@@ -1,12 +1,13 @@
 .search-form {
     display: flex;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     /* align-items: center; */
     /* align-content: center; */
     justify-content: center;
-    margin: auto;
-    width: 80%;
+    margin: 10px auto;
+    width: 70%;
     /* border: 1px red solid; */
+    background-color: blue;
 }
 
 .search-form > div {
@@ -15,14 +16,21 @@
     
 }
 
-.search-form > div > input {
+.search-input {
     border: 1px black solid;
-    width: 20rem;
+    width: 23rem;
     
 }
 
-.search-form > button {
-    border: 1px black solid;
-    height: 3vh auto;
+#search-form-button {
+    border: 0.9px black solid;
+    height: 20px;
+    width: 80px;
+    margin-top: auto;
     /* padding: 0; */
+}
+
+#ft-only {
+    /* font-style: italic; */
+    font-size: 1em;
 }
