@@ -1,20 +1,29 @@
 import React from 'react';
 
 import Navbar from './components/Navbar';
-import SearchForm from './components/SearchForm';
+// import SearchForm from './components/SearchForm';
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
-      </header>
-      {/* <SearchForm /> */}
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
 
-    </div>
-  );
+  async
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <Navbar />
+
+        </header>
+        {/* <SearchForm /> */}
+
+      </div>
+    );
+  }
 }
 
 export default App;
