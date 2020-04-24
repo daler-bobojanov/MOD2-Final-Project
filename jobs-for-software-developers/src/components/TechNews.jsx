@@ -30,16 +30,20 @@ class TechNews extends React.Component {
 
     render() {
         const postNews = this.state.data.map((post, id) => (
-            <div key={id} className="news-grid-container">
-                <h2>{post.title}</h2>
-                <p>{post.source.name}</p>
+            <div key={id} className="news-grid-container-child">
+                <h4>{post.title}</h4>
+                <img src={post.urlToImage} alt="news-headline-image" className="news-image" />
+                <div>
+                    <p>{post.description}</p>
+                    <p>Source: {post.source.name}</p>
+                </div>
             </div>
         ))
         return (
-            <React.Fragment>
+            <div className="news-grid-container">
                 {postNews}
 
-            </React.Fragment>
+            </div>
         );
     }
 }
