@@ -17,8 +17,10 @@ nav {
 }
 
 .link {
+    font-size: 1.2em;
     color: white;
     text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #nav-img {
