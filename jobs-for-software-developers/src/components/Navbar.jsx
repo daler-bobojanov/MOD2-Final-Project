@@ -35,10 +35,10 @@ class Navbar extends React.Component {
                         </li>
                         <li>
                             Sign Out
-                    </li>
+                         </li>
                         <li>
                             User Name
-                    </li>
+                         </li>
                     </ul>
                 </nav>
                 <Switch>
