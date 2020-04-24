@@ -46,7 +46,7 @@ class AllJobs extends React.Component {
         ))
         return (
             <React.Fragment>
-                <SearchForm />
+                {/* <SearchForm /> */}
                 <hr /><br />
                 {postJobs}
 
