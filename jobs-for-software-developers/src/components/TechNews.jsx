@@ -19,7 +19,7 @@ class TechNews extends React.Component {
 
     async fetchNews() {
         try {
-            const api_call = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${_api_key}`);
+            const api_call = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${_api_key}&pageSize=40`);
             console.log(api_call.data.articles);
             this.setState({ data: api_call.data.articles });
         } catch (e) {
@@ -32,9 +32,9 @@ class TechNews extends React.Component {
         const postNews = this.state.data.map((post, id) => (
             <div key={id} className="news-grid-container-child">
                 <div id="news-anchor">
-                    <a href={post.url} target="_blank" >{post.title}</a>
+                    <a href={post.url} target="_blank" rel="noopener noreferrer">{post.title}</a>
                 </div>
-                <img src={post.urlToImage} alt="news-headline-image" className="news-image" />
+                <img src={post.urlToImage} alt="news-headline" className="news-image" />
                 <div>
                     <p>{post.description}</p>
                 </div>
@@ -53,7 +53,7 @@ class TechNews extends React.Component {
                     {postNews}
 
                     <footer>
-                        <a href="https://newsapi.org/" target="_blank">Powered by News API</a>
+                        <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">Powered by News API</a>
                     </footer>
                 </div>
             </React.Fragment>
