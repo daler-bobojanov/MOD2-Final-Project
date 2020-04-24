@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import '../styles/TechNews.css';
+// source https://www.npmjs.com/package/react-scroll-up-button#circle-arrow-button;
+import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 
 const _api_key = process.env.REACT_APP_NEWS_API_KEY;
 
@@ -56,6 +58,7 @@ class TechNews extends React.Component {
                         <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">Powered by News API</a>
                     </footer>
                 </div>
+                <ScrollUpButton />
             </React.Fragment>
         );
     }
