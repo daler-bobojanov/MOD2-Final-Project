@@ -4,6 +4,7 @@ import axios from 'axios';
 import '../styles/AllJobs.css';
 import SearchForm from './SearchForm';
 import JobDescriptionModal from './JobDescriptionModal';
+import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 
 // const BASE_URL = "https://jobs.github.com/positions.json?markdown=false&page=&location=&description=";
 
@@ -47,6 +48,7 @@ class Logo extends React.Component {
                 <br />
                 <br />
                 {postJobs}
+                <ScrollUpButton />
             </div>
         );
     }
