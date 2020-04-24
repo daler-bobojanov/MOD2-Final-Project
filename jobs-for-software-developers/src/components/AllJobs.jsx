@@ -5,6 +5,7 @@ import axios from 'axios';
 import '../styles/AllJobs.css';
 import SearchForm from './SearchForm';
 import JobDescriptionModal from './JobDescriptionModal';
+import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 
 // const BASE_URL = 'https://jobs.github.com/positions.json?';
 
@@ -49,7 +50,7 @@ class AllJobs extends React.Component {
                 {/* <SearchForm /> */}
                 <hr /><br />
                 {postJobs}
-
+                <ScrollUpButton />
                 {/* <h2>This is All jobs tab</h2> */}
             </React.Fragment >
         );
