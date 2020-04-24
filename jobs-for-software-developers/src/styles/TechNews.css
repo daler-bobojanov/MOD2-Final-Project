@@ -6,10 +6,12 @@
     gap: 1em;
     /* align-items: space-around; */
     /* justify-items: start; */
-    padding: 40px;
-    /* margin: 50px auto; */
+    padding: 0 30px;
+    transition: transform .2s;
 }
-
+.news-grid-container-child:hover {
+    box-shadow: 2px 3px 25px red;
+}
 .news-image {
     max-width: 100%;
     min-height: 50%;
@@ -33,4 +35,17 @@
 
 #news-anchor {
     padding-bottom: 10px;
+}
+
+#source-date {
+    text-align: start;
+    line-height: 0.3em;
+    padding-top: 5px;
+    
+}
+
+#headline-h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
 }
