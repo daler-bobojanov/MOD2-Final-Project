@@ -1,8 +1,25 @@
 .news-grid-container {
+    border: 1px red solid;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
-    margin: 10px 10px auto;
-    border: 1px black solid;
-    width: 100%;
+    gap: 1em;
+    /* align-items: space-around; */
+    /* justify-items: start; */
+    padding: 40px;
+    /* margin: 50px auto; */
+}
+
+.news-image {
+    max-width: 100%;
+    min-height: 50%;
+    border: 1px blue solid;
+}
+
+.news-grid-container-child {
+    border: 1px orange solid;
+    /* width: 90%; */
+    padding: 2px;
+    text-align: center;
+    
 }
