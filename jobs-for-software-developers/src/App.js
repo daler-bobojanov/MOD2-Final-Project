@@ -15,10 +15,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Navbar />
+        {/* <header className="App-header"> */}
+        <Navbar />
 
-        </header>
+        {/* </header> */}
         {/* <SearchForm /> */}
 
       </div>
