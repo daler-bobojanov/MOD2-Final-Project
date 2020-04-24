@@ -1,5 +1,5 @@
 .news-grid-container {
-    border: 1px red solid;
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
@@ -13,13 +13,24 @@
 .news-image {
     max-width: 100%;
     min-height: 50%;
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
 }
 
 .news-grid-container-child {
-    border: 1px orange solid;
+    border: 1px black solid;
     /* width: 90%; */
     padding: 2px;
     text-align: center;
-    
+    box-shadow: 4px 5px 9px black;
+    overflow: auto;
+}
+
+#news-anchor > a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2em;
+}
+
+#news-anchor {
+    padding-bottom: 10px;
 }
