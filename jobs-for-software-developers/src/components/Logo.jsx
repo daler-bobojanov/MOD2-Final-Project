@@ -47,9 +47,6 @@ class Logo extends React.Component {
                 <br />
                 <br />
                 {postJobs}
-
-
-
             </div>
         );
     }
