@@ -38,20 +38,25 @@ class TechNews extends React.Component {
                 <div>
                     <p>{post.description}</p>
                 </div>
-                <div>
+                <div id="source-date">
                     <p>Source: {post.source.name}</p>
                     <p>Published: {post.publishedAt}</p>
                 </div>
             </div>
         ))
         return (
-            <div className="news-grid-container">
-                {postNews}
+            <React.Fragment>
+                <div>
+                    <h1 id="headline-h1">Today's Top Headlines</h1>
+                </div>
+                <div className="news-grid-container">
+                    {postNews}
 
-                <footer>
-                    <a href="https://newsapi.org/" target="_blank">Powered by News API</a>
-                </footer>
-            </div>
+                    <footer>
+                        <a href="https://newsapi.org/" target="_blank">Powered by News API</a>
+                    </footer>
+                </div>
+            </React.Fragment>
         );
     }
 }
