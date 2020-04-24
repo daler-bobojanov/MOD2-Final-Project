@@ -1,14 +1,14 @@
 import React from 'react'
 import '../styles/Navbar.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-// import homeButton from '../assets/homeButton.png';
 import homeBtn from '../assets/homeBtn.png';
 
 import AllJobs from './AllJobs';
 import MySavedJobs from './MySavedJobs';
-// import SignOut from './SignOut';
+
 // import UserName from './UserName';
 import Logo from './Logo';
+import TechNews from './TechNews';
 // import SearchForm from './SearchForm';
 
 
@@ -34,8 +34,8 @@ class Navbar extends React.Component {
                             <Link className="link" to="/mysavedjobs">My Saved jobs</Link>
                         </li>
                         <li>
-                            Sign Out
-                         </li>
+                            <Link className="link" to="/technews">Tech News</Link>
+                        </li>
                         <li>
                             User Name
                          </li>
@@ -45,6 +45,7 @@ class Navbar extends React.Component {
                     <Route exact path="/" component={Logo} />
                     <Route exact path='/alljobs' component={AllJobs} />
                     <Route exact path='/mysavedjobs' component={MySavedJobs} />
+                    <Route exact path="/technews" component={TechNews} />
                 </Switch>
             </Router>
         );
