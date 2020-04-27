@@ -70,7 +70,7 @@ const JobDescriptionModal = (props) => {
                             </p>
                         </div>
 
-                        <div style={{ background: "rgb(255, 254, 241)", padding: "0 auto", border: "0.8px gray solid", paddingRight: "8px", borderRadius: "3.5px" }}>
+                        <div style={{ background: "rgb(255, 254, 241)", padding: "0 auto", border: "0.8px gray solid", paddingRight: "8px", borderRadius: "3.5px", overflow: "hidden" }}>
                             <h3>How to apply</h3>
                             <hr />
                             <ReactMarkdown source={props.value.how_to_apply} escapeHtml={false} />
