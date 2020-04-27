@@ -38,7 +38,7 @@ class Navbar extends React.Component {
                         </li>
                         <li>
                             User Name
-                         </li>
+                        </li>
                     </ul>
                 </nav>
                 <Switch>
