@@ -25,7 +25,6 @@ Minimum Project Requirements:
 ! - Be written with kebab -case CSS class names (e.g.this - is - the - class- name)
 ! - Be written with semantic, camelCase JavaScript variable names
 ! - pseudocode file in root of project repository
-! - readme file has embedded link(not url) to publicly deployed app
 ! - Minimum 90 GitHub commits
 
 Exceeding Project Requirements:
@@ -34,3 +33,4 @@ Exceeding Project Requirements:
 ! - Use Redux middleware to respond to and modify state change
 ! -  Project is deployed using firebase
 ! -  Uses React, AND Redux
+! - readme file has embedded link(not url) to publicly deployed app
