@@ -14,9 +14,9 @@ const JobDescriptionModal = (props) => {
             <a style={{ fontSize: "20px", textDecoration: "none", color: "blue" }} href="##" onClick={() => setmodalIsOpen(true)}>{props.value.title}</a>
 
             <Modal
-                className='modal'
-                overlayClassName='modal-overlay'
-                bodyOpenClassName='modal-open'
+                className="react-modal"
+                overlayClassName="react-modal-overlay"
+                bodyOpenClassName="react-modal-open"
                 isOpen={modalIsOpen}
                 onRequestClose={() => setmodalIsOpen(false)}
                 style={
@@ -49,7 +49,9 @@ const JobDescriptionModal = (props) => {
             >
                 <div style={{ display: 'grid', gridTemplateColumns: '80% 20%', alignItems: "right" }}>
                     <div style={{ borderRight: "0.8px solid #ccc", padding: "0 5px" }}>
-                        <button onClick={() => setmodalIsOpen(false)} style={{ fontSize: '1em', border: '0.8px gray solid', padding: '2px', borderRadius: "4px" }}>Close Form</button>
+                        {/* <button onClick={() => setmodalIsOpen(false)} style={{ fontSize: '1em', border: '0.8px gray solid', padding: '2px', borderRadius: '4px', marginBottom: '16px' }}>Close Form</button><br /> */}
+                        <button onClick={() => setmodalIsOpen(false)} className='btn btn-outline-primary btn-sm' style={{ marginBottom: '16px' }}>Close Form</button><br />
+
                         {/* <MySavedJobs jobID={props.value.id} /> */}
                         <h3>Job Description:</h3>
                         <h2><i>{props.value.title}</i></h2>
