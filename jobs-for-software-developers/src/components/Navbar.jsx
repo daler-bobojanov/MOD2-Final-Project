@@ -5,15 +5,14 @@ import homeBtn from '../assets/homeBtn.png';
 
 import AllJobs from './AllJobs';
 import MySavedJobs from './MySavedJobs';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import UserName from './UserName';
 import Logo from './Logo';
 import TechNews from './TechNews';
+
+// import UserName from './UserName';
 // import SearchForm from './SearchForm';
 
 
 class Navbar extends React.Component {
-
     // function to Refresh the page upon Home button click
     refreshPage() {
         window.location.reload(false);
@@ -53,3 +52,4 @@ class Navbar extends React.Component {
 }
 
 export default Navbar;
+
