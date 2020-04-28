@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+// To conver Json data to Markdown. 
 import ReactMarkdown from 'react-markdown/with-html';
 
 // import MySavedJobs from './MySavedJobs';
@@ -46,6 +47,8 @@ const JobDescriptionModal = (props) => {
                     }
                 }
             >
+
+                {/* Data rendering passed in as props */}
                 <div style={{ display: 'grid', gridTemplateColumns: '80% 20%', alignItems: "right" }}>
                     <div style={{ borderRight: "0.8px solid #ccc", padding: "0 5px" }}>
                         <button onClick={() => setmodalIsOpen(false)} className='btn btn-outline-primary btn-sm' style={{ marginBottom: '16px' }}>Close Form</button><br />
