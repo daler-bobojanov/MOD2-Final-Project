@@ -14,7 +14,7 @@ import TechNews from './TechNews';
 
 class Navbar extends React.Component {
     // function to Refresh the page upon Home button click
-    refreshPage() {
+    refreshPage = () => {
         window.location.reload(false);
     }
 

@@ -21,7 +21,7 @@ class AllJobs extends React.Component {
     }
 
     // async API call 
-    async getAllJobs() {
+    getAllJobs = async () => {
         try {
             const api_call = await axios.get(`https://jobs.github.com/positions.json?markdown=false&page=`);
 
