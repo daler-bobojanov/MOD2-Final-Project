@@ -1,11 +1,11 @@
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    min-height: 11vh;
     background: black;
     color: white;
-    padding-top: 10px;
+    padding-top: 11px;
 }
 
 .nav-links {
@@ -18,7 +18,7 @@ nav {
 }
 
 .link {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: white;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
