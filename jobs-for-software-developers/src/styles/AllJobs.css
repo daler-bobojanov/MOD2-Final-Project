@@ -1,16 +1,10 @@
 .container-all-jobs {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: start; */
     text-align: start;
     width: 60%;
     margin: auto;
     padding-top: 5px;
-    /* padding-bottom: 5px; */
-    /* line-height: 2.9em; */
     background-color: rgba(242, 241, 243, 0.87);
     padding-left: 30px;
-    /* border: 1px white solid; */
     box-shadow: rgba(0, 0, 0, 0.623) 6px 6px 10px;
     transition: transform .2s;
 }

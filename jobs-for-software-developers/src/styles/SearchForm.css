@@ -1,28 +1,16 @@
 .search-form {
     display: flex;
-    /* padding-top: 5%; */
     align-items: center;
-    /* align-content: center; */
     justify-content: space-around;
     margin: 40px auto;
     width: 80%;
-    /* border: 1px red solid; */
-    /* background-color: blue; */
 }
-
-/* .search-form > div { */
-    /* width: 20rem; */
-    /* margin: auto; */
-    
-/* } */
 
 .form-group{
     width: 32rem;
     
 }
-/* .form-control {
-    height: 500px;
-} */
+
 #input-search1 {
     background-image: url(../assets/brief-case.png);
     background-origin: content-box;
@@ -38,19 +26,4 @@
     text-indent: 30px;
     background-size: 4.6%;
 }
-/* .form-check { */
-    /* border: 1px black solid; */
-/* } */
-/* #search-form-button {
-    border: 0.9px black solid;
-    height: 20px;
-    width: 80px;
-    margin-top: auto;
-    
-} */
-
-/* #ft-only { */
-    /* font-style: italic; */
-    /* font-size: 1em; */
-/* } */
 
