@@ -1,13 +1,12 @@
 import React from 'react'
 import axios from 'axios';
 
-
 import '../styles/AllJobs.css';
-import SearchForm from './SearchForm';
+// import SearchForm from './SearchForm';
 import JobDescriptionModal from './JobDescriptionModal';
+// Page scroll up button. Source code from - https://www.npmjs.com/
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 
-// const BASE_URL = 'https://jobs.github.com/positions.json?';
 
 class AllJobs extends React.Component {
     constructor(props) {
@@ -21,10 +20,11 @@ class AllJobs extends React.Component {
         this.getAllJobs();
     }
 
+    // async API call 
     async getAllJobs() {
         try {
             const api_call = await axios.get(`https://jobs.github.com/positions.json?markdown=false&page=`);
-            // console.log(api_call);
+
             this.setState({ data: api_call.data })
             console.log(this.state.data, 'This is result of this.state');
             return api_call;
@@ -37,8 +37,6 @@ class AllJobs extends React.Component {
         const postJobs = this.state.data.map(post => (
             <div className="container-all-jobs" key={post.id}>
                 <JobDescriptionModal value={post} />
-                {/* <a href={post.url}>{post.title}</a> */}
-                {/* <br /> */}
                 <p>Company: <a id="container-company-url" href={post.company_url} target="_blank" rel="noopener noreferrer">{post.company}</a></p>
                 <p>Location: {post.location}</p>
                 <p>Type: {post.type}</p>
@@ -47,11 +45,9 @@ class AllJobs extends React.Component {
         ))
         return (
             <React.Fragment>
-                {/* <SearchForm /> */}
                 <hr /><br />
                 {postJobs}
                 <ScrollUpButton />
-                {/* <h2>This is All jobs tab</h2> */}
             </React.Fragment >
         );
     }
