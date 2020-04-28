@@ -21,7 +21,7 @@ class MySavedJobs extends React.Component {
             <React.Fragment>
                 <button type="button" onClick={this.getJobID}>Bookmark</button>
                 {console.log(this.idArray)}
-                <h2>This is My Saved jobs tab</h2>
+                <h2>This is My Saved jobs tab. Currently under construction...</h2>
             </React.Fragment>
         );
     }
