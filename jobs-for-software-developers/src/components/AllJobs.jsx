@@ -26,7 +26,7 @@ class AllJobs extends React.Component {
             const api_call = await axios.get(`https://jobs.github.com/positions.json?markdown=false&page=`);
 
             this.setState({ data: api_call.data })
-            console.log(this.state.data, 'This is result of this.state');
+            // console.log(this.state.data, 'This is result of this.state');
             return api_call;
         } catch (e) {
             console.error(e);
