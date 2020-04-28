@@ -27,12 +27,16 @@
     background-image: url(../assets/brief-case.png);
     background-origin: content-box;
     background-repeat: no-repeat;
-    text-indent: 35px;
-/* padding-top: 1px; */
-/* padding-right: 2px; */
-/* background-position: 10px; */
+    text-indent: 30px;
     background-size: 5%;
+}
 
+#input-search2 {
+    background-image: url(../assets/globe-logo-black.png);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    text-indent: 30px;
+    background-size: 4.6%;
 }
 /* .form-check { */
     /* border: 1px black solid; */
