@@ -16,13 +16,12 @@ class TechNews extends React.Component {
 
     componentDidMount() {
         this.fetchNews();
-
     }
 
-    async fetchNews() {
+    fetchNews = async () => {
         try {
             const api_call = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${_api_key}&pageSize=40`);
-            console.log(api_call.data.articles);
+            // console.log(api_call.data.articles);
             this.setState({ data: api_call.data.articles });
         } catch (e) {
             console.error(e);
@@ -68,5 +67,5 @@ export default TechNews;
 
 /*
 TO DO:
-- conver function expressions to ES6
+- convert function expressions to ES6 -> DONE!
 */
