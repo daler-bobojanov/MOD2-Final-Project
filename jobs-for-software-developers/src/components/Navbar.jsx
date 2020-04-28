@@ -5,7 +5,7 @@ import homeBtn from '../assets/homeBtn.png';
 
 import AllJobs from './AllJobs';
 import MySavedJobs from './MySavedJobs';
-
+// import 'bootstrap/dist/css/bootstrap.min.css';
 // import UserName from './UserName';
 import Logo from './Logo';
 import TechNews from './TechNews';
