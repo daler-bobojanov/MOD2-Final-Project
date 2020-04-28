@@ -15,7 +15,7 @@ const SearchForm = props => (
         <div className="form-group">
             <label htmlFor="location">Location</label><br />
             {/* <input className="search-input" type="text" name="location" placeholder="Filter by city, state, zip code or country..." /> */}
-            <input className="form-control" type="text" name="location" placeholder="Filter by city, state, zip code or country..." />
+            <input className="form-control" type="text" name="location" id="input-search2" placeholder="Filter by city, state, zip code or country..." />
 
         </div>
 
