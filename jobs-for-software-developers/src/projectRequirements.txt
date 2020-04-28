@@ -17,18 +17,21 @@ Minimum Project Requirements:
 ! - Frontend uses Axios requests - DONE!
 ! - App renders in browser - DONE!
 ! - Uses CSS or styled components to style application - DONE!
+! - There should be 2 container components(stateful) - Total=6.
+ 1(alljobs) + 1(jodDescModal) + 1(logo) + 1(mySavedJobs) + 1(navbar) + 1(techNews)
 
-! - The code should be written in ES6 as much as possible
-! - There should be 2 container components(stateful)
-! - There should be 5 presentational components(stateless)
-! - On project submission there should be 0 console.log() statements seen in the browser
-! - Be written with kebab -case CSS class names (e.g.this - is - the - class- name)
-! - Be written with semantic, camelCase JavaScript variable names
-! - pseudocode file in root of project repository
-! - Minimum 90 GitHub commits
+! - There should be 5 presentational components(stateless) - Total=3.
+1(searchForm) + 1(userName) + 1(App.js)
+
+! - The code should be written in ES6 as much as possible - DONE!
+! - On project submission there should be 0 console.log() statements seen in the browser - DONE!
+! - Be written with kebab -case CSS class names (e.g.this - is - the - class- name) - DONE!
+! - Be written with semantic, camelCase JavaScript variable names - DONE!
+! - pseudocode file in root of project repository - Comments provided!
+! - Minimum 90 GitHub commits - DONE!
 
 Exceeding Project Requirements:
-! - Incorporating a new technology not taught in the program
+! - Incorporating a new technology not taught in the program - used Bootstrap!
 ! - Your app should have one HTML page to render your react - redux application
 ! - Use Redux middleware to respond to and modify state change
 ! -  Project is deployed using firebase
