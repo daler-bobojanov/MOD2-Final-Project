@@ -1,14 +1,15 @@
 import React from 'react';
 import axios from 'axios';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../styles/AllJobs.css';
 import SearchForm from './SearchForm';
 import JobDescriptionModal from './JobDescriptionModal';
+// Page scroll up button. Source code from - https://www.npmjs.com/
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 
 // const BASE_URL = "https://jobs.github.com/positions.json?markdown=false&page=&location=&description=";
-
 // https://jobs.github.com/positions.json?markdown=false&page=&location=${location}&description=${description}
+
 class Logo extends React.Component {
     state = {
         data: [],
@@ -18,6 +19,7 @@ class Logo extends React.Component {
 
     searchJobs = async (e) => {
         e.preventDefault();
+        // grabbing value from SearchForm inputs
         const location = e.target.elements.location.value;
         const description = e.target.elements.jobDescription.value;
 
