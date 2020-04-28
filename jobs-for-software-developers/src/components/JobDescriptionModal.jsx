@@ -28,7 +28,6 @@ const JobDescriptionModal = (props) => {
                             right: 20,
                             bottom: 20,
                             backgroundColor: 'rgba(255, 255, 255, 0.5)',
-                            // opacity: 0.5
                         },
                         content: {
                             position: 'absolute',
@@ -49,7 +48,6 @@ const JobDescriptionModal = (props) => {
             >
                 <div style={{ display: 'grid', gridTemplateColumns: '80% 20%', alignItems: "right" }}>
                     <div style={{ borderRight: "0.8px solid #ccc", padding: "0 5px" }}>
-                        {/* <button onClick={() => setmodalIsOpen(false)} style={{ fontSize: '1em', border: '0.8px gray solid', padding: '2px', borderRadius: '4px', marginBottom: '16px' }}>Close Form</button><br /> */}
                         <button onClick={() => setmodalIsOpen(false)} className='btn btn-outline-primary btn-sm' style={{ marginBottom: '16px' }}>Close Form</button><br />
 
                         {/* <MySavedJobs jobID={props.value.id} /> */}

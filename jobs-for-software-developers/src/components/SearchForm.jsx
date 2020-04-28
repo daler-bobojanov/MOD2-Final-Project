@@ -36,8 +36,8 @@ export default SearchForm;
 /*
 TO DO:
 - make use of Full Time checkbox;
-- add image as placeholder;
-- fix button style;
-- make overall look prettier;
+- add image as placeholder; -> DONE!
+- fix button style; -> DONE!
+- make overall look prettier; -> DONE!
 */
 
