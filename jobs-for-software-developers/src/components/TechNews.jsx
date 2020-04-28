@@ -28,7 +28,6 @@ class TechNews extends React.Component {
         }
     }
 
-
     render() {
         const postNews = this.state.data.map((post, id) => (
             <div key={id} className="news-grid-container-child">
