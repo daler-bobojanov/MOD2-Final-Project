@@ -3,6 +3,7 @@ import axios from 'axios';
 import '../styles/TechNews.css';
 // source https://www.npmjs.com/package/react-scroll-up-button#circle-arrow-button;
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
+import * as ReactBootStrap from 'react-bootstrap';
 
 const _api_key = process.env.REACT_APP_NEWS_API_KEY;
 
@@ -10,7 +11,8 @@ class TechNews extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [],
+            loading: false
         }
     }
 
@@ -22,8 +24,9 @@ class TechNews extends React.Component {
         try {
             const api_call = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${_api_key}&pageSize=40`);
             // console.log(api_call.data.articles);
-            this.setState({ data: api_call.data.articles });
+            this.setState({ data: api_call.data.articles, loading: true });
         } catch (e) {
+            window.alert(e);
             console.error(e);
         }
     }
@@ -50,7 +53,8 @@ class TechNews extends React.Component {
                     <h1 id="headline-h1">Today's Top Headlines</h1>
                 </div>
                 <div className="news-grid-container">
-                    {postNews}
+                    {this.state.loading ? (postNews) : (<ReactBootStrap.Spinner animation="border" variant="primary" style={{ margin: '0 200% auto' }} />)}
+                    {/* {postNews} */}
 
                     <footer>
                         <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">Powered by News API</a>
