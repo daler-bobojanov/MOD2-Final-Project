@@ -6,6 +6,7 @@ import SearchForm from './SearchForm';
 import JobDescriptionModal from './JobDescriptionModal';
 // Page scroll up button. Source code from - https://www.npmjs.com/
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
+import * as ReactBootStrap from 'react-bootstrap';
 
 // const BASE_URL = "https://jobs.github.com/positions.json?markdown=false&page=&location=&description=";
 // https://jobs.github.com/positions.json?markdown=false&page=&location=${location}&description=${description}
@@ -13,7 +14,8 @@ import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 class Logo extends React.Component {
     state = {
         data: [],
-        error: undefined
+        error: undefined,
+        loading: false
     }
 
 
@@ -24,12 +26,13 @@ class Logo extends React.Component {
         const description = e.target.elements.jobDescription.value;
 
         try {
-            const api_call = await axios.get(`https://jobs.github.com/positions.json?markdown=false&page=&location=${location}&description=${description}`);
+            const api_call = await axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://jobs.github.com/positions.json?markdown=false&page=&location=${location}&description=${description}`);
             // console.log(api_call.data, "TEST");
-            this.setState({ data: api_call.data });
-            // console.log(this.state.data, "State from Logo")
+            this.setState({ data: api_call.data, loading: false });
+            console.log(this.state.data, "State from Logo")
             return api_call;
         } catch (e) {
+            window.alert(e);
             console.error(e);
         }
     }
@@ -49,6 +52,7 @@ class Logo extends React.Component {
                 <SearchForm searchJobs={this.searchJobs} />
                 <br />
                 <br />
+                {/* {this.state.loading ? (<ReactBootStrap.Spinner animation="border" variant="primary" style={{ marginLeft: '50%' }} />) : (<ReactBootStrap.Spinner animation="border" variant="primary" style={{ marginLeft: '50%' }} />)} */}
                 {postJobs}
                 <ScrollUpButton />
             </div>
