@@ -27,3 +27,32 @@
     background-size: 4.6%;
 }
 
+@media screen and (max-width: 1605px) {
+    .search-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    .form-group{
+        width: 26rem;
+    }
+
+    .form-control::placeholder{
+        font-size: 0.77em;
+    }
+
+    #input-search1 {
+        text-indent: 35px;
+        background-size: 7%;
+        padding-left: 1%;
+    }
+
+    #input-search2 {
+        text-indent: 35px;
+        background-size: 6%;
+        padding-left: 1%;
+    }
+}
