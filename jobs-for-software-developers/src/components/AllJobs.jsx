@@ -6,13 +6,15 @@ import '../styles/AllJobs.css';
 import JobDescriptionModal from './JobDescriptionModal';
 // Page scroll up button. Source code from - https://www.npmjs.com/
 import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
+import * as ReactBootStrap from 'react-bootstrap';
 
 
 class AllJobs extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [],
+            loading: false
         }
     }
 
@@ -23,12 +25,14 @@ class AllJobs extends React.Component {
     // async API call 
     getAllJobs = async () => {
         try {
-            const api_call = await axios.get(`https://jobs.github.com/positions.json?markdown=false&page=`);
+            const api_call = await axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://jobs.github.com/positions.json?markdown=false&page=`);
 
-            this.setState({ data: api_call.data })
+            this.setState({ data: api_call.data, loading: true })
             // console.log(this.state.data, 'This is result of this.state');
             return api_call;
+
         } catch (e) {
+            window.alert(e);
             console.error(e);
         }
     }
@@ -46,7 +50,7 @@ class AllJobs extends React.Component {
         return (
             <React.Fragment>
                 <hr /><br />
-                {postJobs}
+                {this.state.loading ? (postJobs) : (<ReactBootStrap.Spinner animation="border" variant="primary" style={{ marginLeft: '50%' }} />)}
                 <ScrollUpButton />
             </React.Fragment >
         );
